@@ -5,191 +5,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <link rel="icon" href="./images/logo_1.png" />
+    <title>Sitansu Mandal</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  /> -->
+    <script src="https://kit.fontawesome.com/f41b656bbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/calender.css">
 </head>
 
 <body>
     <header>
-
-        <div class="topnav" id="nav-menu">
-            <a href="#home" class="active">Sitansu Mandal</a>
-            <div class="nav_inner" style="float:right;">
-                <a href="#" style="display: none;"></a>
-                <a href="#home" class="nav-link home">Home</a>
-                <a href="#about" class="nav-link about">About</a>
-                <a href="#skills" class="nav-link skills">Skills</a>
-                <a href="#projects" class="nav-link projects">Projects</a>
-                <a href="#contact" class="nav-link contact">Contact</a>
-                <a id="resume-link-2" onclick="Resume()" href="https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link" class="nav-link resume">Resume</a>
-            </div>
-            <a style="position: absolute;top: 0;right: 0;" href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="user">
+            <img style="background-color: rgb(224, 211, 211)" class="home-img" src="./images/profile.jpg" alt="" />
+            <h3 class="name">Sitansu Mandal</h3>
+            <p class="post">Full Stack Web Developer</p>
         </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li id="home"><a href="#home2">Home</a></li>
+                <li id="about" class="about section"><a href="#about2">About</a></li>
+                <li id="skills"><a href="#portfolio">Skills</a></li>
+                <li id="projects"><a href="#projects2">Project</a></li>
+                <li id="contact"><a href="#contact">Contact</a></li>
+                <li id="resume"><a href="" onclick="gotodrive()">Resume</a></li>
+
+            </ul>
+        </nav>
     </header>
 
+    <!------header section ends here-->
 
-    <section id="home">
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-----home section starts here-->
+
+    <section class="nav-link home" id="home2">
+        <h3>Hello,</h3>
+        <h1>I'm <span id="user-detail-name" class="variable">Sitansu Mandal</span></h1>
+        <!-- <p style="font-size: 5rem">a bit more about me :</p> -->
         <div>
-            <div>
-                <h1>Hi,👋I am</h1>
-                <h1 id="user-detail-name">Sitansu Mandal</h1>
-                <h1 id="user-detail-intro">A Full Stack Web Developer</h1>
-            </div>
-            <div>
-                <a id="resume-link-2" href="" download onclick=window.open() href=""><button id="resume-button-2">Resume </button></a>
+            <a href="#about2"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+            <a href="./Sitansu-Mandal-Resume.pdf" download id="resume-link-2" id="resume-link-1" id="resume-button-1"><button class="btn"
+                    onclick="gotodrive()" target="_blank" id="resume-button-2" id="resume-button-1">My
+                    Resume <i class="fas fa-download"></i></button></a>
+        </div>
+    </section>
+
+    <!------about section starts-->
+
+
+    <section class="nav-link about" id="about2">
+        <h1 class="heading"><span>About</span> me</h1>
+
+        <div class="row">
+            <div class="info">
+                <div class="home" id="home">
+                    <p style="font-size: 2.5rem;">I'm <span id="user-detail-name" style="color: #42d347;" >Sitansu Mandal</span><span> and I am a </span><span class="variable_about"> Full Stack Web Developer</span></p>
+                    <p id="user-detail-intro">
+                        An enthusiastic Web Developer, a lifelong learner, skilled in Node.js Backend Development.
+                        Knowledge of JavaScript, HTML, CSS, Node.js, Express.js and MongoDB. High adaptability to learn
+                        new technologies quickly and paying attention to details. Aims to leverage knowledge and build
+                        world-class Web Applications while facilitating organization in achieving function goals.
+                    </p>
+                </div>
+                <div class="img_marping">
+                    <img class="home-img"
+                        src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966"
+                        alt="sitansu" />
+                </div>
             </div>
         </div>
+    </section>
+
+    <!--------statistics and calender-->
+
+    <h1 style="text-align: center;color: #42d347; " id="statistics">My Statistics</h1>
+    <div id="statisticsdiv">
         <div>
-            <img class="home-img" width="200" height="250" src='' alt="profile image">
+            <div><img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=sitansu04&theme=dark"
+                    alt="github-readme-streak-stats"></div>
+            <div><img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=sitansu04&show_icons=true&theme=dark"
+                    alt=""></div>
         </div>
+        <div><img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitansu04&layout=compact&theme=dark"
+                alt=""></div>
+    </div>
 
+    <h1 style="text-align: center;color: #42d347; " id="calender"> My Github Calender</h1>
+    <div id="calenderdiv" class="react-activity-calendar">
+        <div class="calendar" style="margin-top: 30px; color: white;">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </div>
+    <!-- Skills -->
+
+
+
+
+
+    <!-- skills_end -->
+    <!----------project section starts here-->
+
+    <section class="nav-link projects" id="projects2">
+        <h1 class="heading"><span>Projects</span></h1>
+
+        <div class="box-container">
+            <div class="project-card">
+                <img class="project_image" src="./images/grocerystore.jpg" alt="grocerystore" />
+
+                <h3 class="project-title">Grocery Store</h3>
+                <p class="project-description">
+                    An E-commerse website was built with all features,
+                    like, adding to cart, Login-Sign Up ,Making Purchase
+                    and payment.
+                </p>
+                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
+                <div>
+                    <a target="_blank" href="https://github.com/abhi844735/abounding-iron-5249"
+                        class="project-github-link"><button class="btn">GitHub</button></a>
+                    <a target="_blank" href="https://taupe-youtiao-44feae.netlify.app/"
+                        class="project-deployed-link"><button class="btn">
+                            Preview</button></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project_image" src="./images/kindmeal_my.jpg" alt="" />
+
+                <h3 class="project-title">Kindmeal.my</h3>
+                <p class="project-description">
+                    An E-commerce website was built with all features,
+                    like for buying foods, Login-Sign Up, pagination.
+                </p>
+                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
+                <div>
+                    <a target="_blank" href="https://github.com/sitansu04/KindMeal.my"
+                        class="project-github-link"><button class="btn">GitHub </button></a>
+                    <a target="_blank" class="project-deployed-link" href="https://melodic-frangipane-34b225.netlify.app/"><button class="btn">
+                            Preview </button></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project_image" src="./images/bercelle.jpg" alt="" />
+
+                <h3 class="project-title">Bercelle</h3>
+                <p class="project-description">
+                    An E-commerse website was built with all features
+                    like adding to cart, Login-Sign Up, admin panel.
+                </p>
+                <p class="project-description">HTML5 || CSS3 || JavaScript || NOde.js || Express.js || MongoDB</p>
+                <div>
+                    <a target="_blank" href="https://github.com/sitansu04/knowledgeable-sea-5909"
+                        class="project-github-link"><button class="btn">GitHub </button></a>
+                    <a target="_blank" class="project-deployed-link" href="https://glistening-gaufre-2a89df.netlify.app/"><button class="btn">
+                            Preview </button></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project_image" src="./images/calculator.jpg" alt="" />
+
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-description">
+                    It is basic calculator with all features.
+                </p>
+                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
+                <div>
+                    <a target="_blank" href="https://github.com/sitansu04/Calculator"
+                        class="project-github-link"><button class="btn">GitHub </button></a>
+                    <a target="_blank" class="project-deployed-link" href="https://soft-smakager-a9bfc9.netlify.app/"><button class="btn">
+                           Preview </button></a>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <!-- <p id="user-detail-intro">I am currently learning full stacwqeqweassionate about solving real weqweworld problems anweqd activel eld of web development and software engineering</p> -->
+    <!-- scroll top button  -->
 
-    <section id="about" class="about section">
+    <a href="#home2" class="top">
+        <!-- <img src="./images/scroll-top-img.png" alt="" /> -->
+        <i class="fa-3x fa-solid fa-jet-fighter-up top"></i>
+    </a>
 
-        <h1>About</h1>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    </section>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 
-
-
-    <section id="skills">
-
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> Html</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> CSS</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> javascript</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name">node js</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> express js</h2>
-        </div>
-
-    </section>
-
-
-    <section id="projects">
-
-        <div class="project-card">
-
-            <img src="" alt="ad">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descrsiptio n</h4>
-
-            <p class="project-tech-stack">html css s</p>
-
-            <a class="project-github-link" href=""> github</a>
-
-            <a class="project-deployed-link" href="">Deployed </a>
-
-        </div>
-
-
-        <div class="project-card">
-
-            <img src="" alt="daw">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descriptioan</h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-            <a class="project-github-link" href="">github</a>
-
-            <a class="project-deployed-link" href="">Deployed</a>
-        </div>
-
-
-        <div class="project-card">
-
-            <img src="" alt="asd">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descrisption </h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-            <a class="project-github-link" href="">github</a>
-
-            <a class="project-deployed-link" href="">Deployed</a>
-        </div>
-
-
-        <div class="project-card">
-
-            <img src="" alt="sad">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descriptaion</h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-
-            <a class="project-github-link" href="">github</a>
-
-            <a class="project-deployed-link" href="">Deployed</a>
-        </div>
-
-    </section>
-
-
-    <section id="contact">
-        <h2>Contact me</h2>
-
-        <a id="contact-github" href="">Github</a>
-
-        <a id="contact-linkedin" href="">inkedin</a>
-
-        <a id="contact-phone" href="">8016006068</a>
-
-        <a id="contact-email" href="">sitansugcelt@gmail.com</a>
-
-    </section>
-
+    </script>
+    <script src="./script/index.js"></script>
 
 </body>
-<script>
-    function myFunction() {
-        var x = document.getElementById("nav-menu");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-
-    function Resume() {
-        console.log("resume");
-    }
-</script>
 
 </html>
+<!-- //<i class="fa-solid fa-up-right"></i>// -->
