@@ -420,3 +420,50 @@ header #nav-menu ul li a:hover {
 .variable_about{
     color: #42d347;
 }
+
+#skills{
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+.mid{
+  --green: #42d347;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding-top: 3vh;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  color: var(--green);
+}
+#grid{
+  margin: 3vh;
+  padding: 3vh;
+  padding-top: 9vh;
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(4,1fr);
+  gap: 4rem;
+  color: white;
+  /* border: 1px solid red; */
+  text-align: center;
+  border-top: 1px solid gainsboro;
+
+}
+.skills-card-img{
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+#skills-card{
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+#skills-card-img{
+  width: 100%;
+}
