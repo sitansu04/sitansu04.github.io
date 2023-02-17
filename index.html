@@ -5,256 +5,382 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/logo_1.png" />
-    <title>Sitansu Mandal</title>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>im.Sitansu</title>
+    <link rel="stylesheet" href="./Style/calender.css">
+    <link rel="icon" href="./img/logo_1.png">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-  /> -->
-    <script src="https://kit.fontawesome.com/f41b656bbc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/calender.css">
+
+    <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 
 <body>
     <header>
-        <div class="user">
-            <img style="background-color: rgb(224, 211, 211)" class="home-img" src="./images/profile.jpg" alt="" />
-            <h3 class="name">Sitansu Mandal</h3>
-            <p class="post">Full Stack Web Developer</p>
+
+        <div class="topnav" id="nav-menu">
+            <nav class="navbar-container container">
+                <a href="#home" class="active"><span>
+                        <<span>im&#46</span></span>Sitansu<span>/></span></a>
+                <ul class="nav_inner">
+                    <!-- <li><a href="#" style="display: none;"></a></li> -->
+                    <li><a href="#home" class="nav-link home">Home</a></li>
+                    <li><a href="#about" class="nav-link about">About</a></li>
+                    <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                    <li>
+                        <a href="./img/Sitansu_Mandal_Resume.pdf" class="nav-link resume" id="resume-button-1" download><i
+                                class="fa fa-download"></i> Resume </a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
         </div>
 
-        <nav id="nav-menu">
-            <ul>
-                <li id="home"><a href="#home2">Home</a></li>
-                <li id="about" class="about section"><a href="#about2">About</a></li>
-                <li id="skills"><a href="#skills">Skills</a></li>
-                <li id="projects"><a href="#projects2">Project</a></li>
-                <li id="contact"><a href="#contact">Contact</a></li>
-                <li id="resume-button-1" href="./Sitansu-Mandal-Resume.pdf" download><a href="" onclick="gotodrive()">Resume</a></li>
-
-            </ul>
-        </nav>
     </header>
 
-    <!------header section ends here-->
 
-    <div id="menu" class="fas fa-bars"></div>
-
-    <!-----home section starts here-->
-
-    <section class="nav-link home" id="home2">
-        <h3>Hello,</h3>
-        <h1>I'm <span id="user-detail-name" class="variable">Sitansu Mandal</span></h1>
-        <!-- <p style="font-size: 5rem">a bit more about me :</p> -->
-        <div>
-            <a href="#about2"><button class="btn">About me <i class="fas fa-user"></i></button></a>
-            <a href="./Sitansu-Mandal-Resume.pdf" download id="resume-link-2" id="resume-link-1" id="resume-button-1"><button class="btn"
-                    onclick="gotodrive()" target="_blank" id="resume-button-2" id="resume-button-1">My
-                    Resume <i class="fas fa-download"></i></button></a>
+    <!-- -----------------------------home Section -----------------------  -->
+    <div id="home" class="home">
+        <div class="home-div">
+            <div class="home-div-intro">
+                <!-- <h1 id="user-detail-name">Soumya Adhya</h1>
+                <h1 id="user-detail-intro">A <span>Full Stack</span>  <br> Web Developer</h1> -->
+                <h2>Hello,</h2>
+                <h1>I'm <span id="user-detail-name" class="variable">Sitansu Mandal</span></h1>
+            </div>
+            <a href="./img/Soumya_Adhya_Resume.pdf" id="resume-button-2" download><i class="fa fa-download"></i> Resume
+            </a>
+            <!-- <div class="resume-button-2" >
+                <button id="resume-button-2"> <a id="resume-link-2" href="./img/Soumya_Adhya_Resume.pdf" target="_blank" download="Soumya_Adhya_Resume"  onclick="window.open('./img/Soumya_Adhya_Resume.pdf')">Resume </a></button>
+            </div> -->
         </div>
-    </section>
+        <div class="home-animated-div">
+            <img src="./img/animated-coding-gif-unscreen.gif" alt="animated-coding-gif">
+        </div>
+        <!-- <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Soumya Adhya</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                
+            </div>
+        </div> -->
+        <!-- <div>
+        </div> -->
 
-    <!------about section starts-->
+    </div>
 
-
-    <section class="nav-link about" id="about2">
-        <h1 class="heading"><span>About</span> me</h1>
-
+    <!-- ----------------------- about section -----------------------------  -->
+    <section id="about">
+        <h1 class="sub-title-mobile">About Me</h1>
         <div class="row">
-            <div class="info">
-                <div class="home" id="home">
-                    <p style="font-size: 2.5rem;">I'm <span id="user-detail-name" style="color: #42d347;" >Sitansu Mandal</span><span> and I am a </span><span class="variable_about"> Full Stack Web Developer</span></p>
-                    <p id="user-detail-intro">
-                        An enthusiastic Web Developer, a lifelong learner, skilled in Node.js Backend Development.
-                        Knowledge of JavaScript, HTML, CSS, Node.js, Express.js and MongoDB. High adaptability to learn
-                        new technologies quickly and paying attention to details. Aims to leverage knowledge and build
-                        world-class Web Applications while facilitating organization in achieving function goals.
-                    </p>
-                </div>
-                <div class="img_marping">
-                    <img class="home-img"
-                        src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966"
-                        alt="sitansu" />
-                </div>
+            <div class="about-img">
+                <img class="home-img" width="200" height="200" src="./img/130kb.jpg"
+                    alt="profile image">
+
+            </div>
+            <div class="about-child-div">
+                <h1 class="sub-title">About Me</h1>
+                <h2>I'm Sitansu Mandal , <span class="action">Full Stack Web Developer</span></h2>
+                <h3 id="user-detail-intro">An enthusiastic Web Developer, a lifelong learner,
+                    skilled in Node.js Backend Development.
+                    Knowledge of JavaScript, HTML, CSS, Node.js,
+                    Express.js and MongoDB. High adaptability to learn
+                    new technologies quickly and paying attention to
+
+                    details. Aims to leverage knowledge and build world-
+                    class Web Applications while facilitating organization
+
+                    in achieving function goals.</h3>
             </div>
         </div>
+        </div>
+
     </section>
 
-    <!--------statistics and calender-->
+    <!-- ------------------------ skills ---------------------------  -->
 
-    <h1 style="text-align: center;color: #42d347; " id="statistics">My Statistics</h1>
-    <div id="statisticsdiv">
-        <div>
-            <div><img id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com?user=sitansu04&theme=dark"
-                    alt="github-readme-streak-stats"></div>
-            <div><img id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=sitansu04&show_icons=true&theme=dark"
-                    alt=""></div>
-        </div>
-        <div><img id="github-top-langs"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitansu04&layout=compact&theme=dark"
-                alt=""></div>
-    </div>
+    <section id="skills">
 
-    <h1 style="text-align: center;color: #42d347; " id="calender"> My Github Calender</h1>
-    <div id="calenderdiv" class="react-activity-calendar">
-        <div class="calendar" style="margin-top: 30px; color: white;">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
-    </div>
-    <!-- Skills -->
-    <section class="nav-link skills" id="skills">
-        <h2 class="mid">Skills</h2>
-        <hr>
+        <h1 class="sub-title">Skills</h1>
+
+        <!-- <hr> -->
         <div id="grid">
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/html.png" alt="html">
+                <img class="skills-card-img" src="./img/html.png" alt="html">
                 <p class="skills-card-name">HTML</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images//css.png" alt="css">
+                <img class="skills-card-img" src="./img/css.png" alt="css">
                 <p class="skills-card-name">CSS</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images//javascript.png" alt="JavaScript">
+                <img class="skills-card-img" src="./img/javascript.png" alt="JavaScript">
                 <p class="skills-card-name">JavaScript</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/nodejs.png" alt="NodeJS">
-                <p class="skills-card-name">NodeJS</p>
+                <img class="skills-card-img" src="./img/nodejs.png" alt="NodeJS">
+                <p class="skills-card-name">Node.js</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/express.png" alt="Express">
-                <p class="skills-card-name">ExpressJS</p>
+                <img class="skills-card-img" src="./img/express.png" alt="Express">
+                <p class="skills-card-name">Express.js</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/mongodb.png" alt="MongoDB">
+                <img class="skills-card-img" src="./img/mongodb.png" alt="MongoDB">
                 <p class="skills-card-name">MongoDB</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/sql.png" alt="sql">
+                <img class="skills-card-img" src="./img/sql.png" alt="sql">
+                <p class="skills-card-name">My SQL</p>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./img/redis.png" alt="Redis">
                 <p class="skills-card-name">Redis</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/redis.png" alt="Redis">
+                <img class="skills-card-img" src="./img/git.png" alt="git">
                 <p class="skills-card-name">Git</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/git.png" alt="git">
+                <img class="skills-card-img" src="./img/github_white.png" alt="github">
                 <p class="skills-card-name">Github</p>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/github_white.png" alt="github">
-                <p class="skills-card-name">Vs Code</p>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images//postman.png" alt="Postman">
+                <img class="skills-card-img" src="./img/postman.png" alt="Postman">
                 <p class="skills-card-name">Postman</p>
             </div>
         </div>
+
     </section>
 
-    <!-- skills_end -->
-    <!----------project section starts here-->
+    <!-- -------------------------projects ------------------------------ -->
 
-    <section class="nav-link projects" id="projects2">
-        <h1 class="heading"><span>Projects</span></h1>
-
-        <div class="box-container">
-            <div class="project-card">
-                <img class="project_image" src="./images/grocerystore.jpg" alt="grocerystore" />
-
-                <h3 class="project-title">Grocery Store</h3>
-                <p class="project-description">
-                    An E-commerse website was built with all features,
-                    like, adding to cart, Login-Sign Up ,Making Purchase
-                    and payment.
-                </p>
-                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
-                <div>
-                    <a target="_blank" href="https://github.com/abhi844735/abounding-iron-5249"
-                        class="project-github-link"><button class="btn">GitHub</button></a>
-                    <a target="_blank" href="https://taupe-youtiao-44feae.netlify.app/"
-                        class="project-deployed-link"><button class="btn">
-                            Preview</button></a>
-                </div>
-            </div>
+    <section id="projects">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-div">
 
             <div class="project-card">
-                <img class="project_image" src="./images/kindmeal_my.jpg" alt="" />
-
-                <h3 class="project-title">Kindmeal.my</h3>
-                <p class="project-description">
-                    An E-commerce website was built with all features,
-                    like for buying foods, Login-Sign Up, pagination.
-                </p>
-                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
-                <div>
-                    <a target="_blank" href="https://github.com/sitansu04/KindMeal.my"
-                        class="project-github-link"><button class="btn">GitHub </button></a>
-                    <a target="_blank" class="project-deployed-link" href="https://melodic-frangipane-34b225.netlify.app/"><button class="btn">
-                            Preview </button></a>
+                <div class="project-card-image-div">
+                    <img src="./img/grocerystore.jpg" alt="ad">
                 </div>
+
+                <div class="project-card-dtails-div">
+
+                    <h1 class="project-title">Grocery Store</h1>
+
+                    <p class="project-description">An E-commerse website was built with all features, like, adding to
+                        cart, Login-Sign Up ,Making Purchase and payment.</p>
+
+                    <h2 class="teck-stack-heading">Tech Stack :</h2>
+                    <div class="project-tech-stack">
+                        <div><img src="./img/html.png" alt="html"></div>
+                        <div><img src="./img/css.png" alt="css"></div>
+                        <div><img src="./img/javascript.png" alt="js"></div>
+                        <div><img src="./img/nodejs.png" alt="nodejs"></div>
+                        <div><img src="./img/mongodb.png" alt="MongoDB"></div>
+                    </div>
+                    <div class="project-deployed-div">
+                        <a class="project-github-link" target="_blank"
+                            href="https://github.com/abhi844735/abounding-iron-5249"><button
+                                class="project-github-btn"><i class="fa-brands fa-github"></i> Github</button></a>
+                        <a class="project-deployed-link" target="_blank"
+                            href="https://taupe-youtiao-44feae.netlify.app/"><button class="project-deployed-btn"> <img
+                                    src="./img/netlify-icon-removebg-preview.png" alt=""> Deployed </button></a>
+                    </div>
+                </div>
+
             </div>
+
+
+        </div>
+        <div class="project-div">
 
             <div class="project-card">
-                <img class="project_image" src="./images/bercelle.jpg" alt="" />
-
-                <h3 class="project-title">Bercelle</h3>
-                <p class="project-description">
-                    An E-commerse website was built with all features
-                    like adding to cart, Login-Sign Up, admin panel.
-                </p>
-                <p class="project-description">HTML5 || CSS3 || JavaScript || NOde.js || Express.js || MongoDB</p>
-                <div>
-                    <a target="_blank" href="https://github.com/sitansu04/knowledgeable-sea-5909"
-                        class="project-github-link"><button class="btn">GitHub </button></a>
-                    <a target="_blank" class="project-deployed-link" href="https://glistening-gaufre-2a89df.netlify.app/"><button class="btn">
-                            Preview </button></a>
+                <div class="project-card-image-div">
+                    <img src="./img/kindmeal_my.jpg" alt="ad">
                 </div>
+
+                <div class="project-card-dtails-div">
+
+                    <h1 class="project-title">Kindmeal.my</h1>
+
+                    <p class="project-description">An E-commerce website was built with all features, like for buying
+                        foods, Login-Sign Up, pagination.</p>
+
+                    <h2>Tech Stack :</h2>
+                    <div class="project-tech-stack">
+                        <div><img src="./img/html.png" alt="html"></div>
+                        <div><img src="./img/css.png" alt="css"></div>
+                        <div><img src="./img/javascript.png" alt="js"></div>
+                        <div><img src="./img/nodejs.png" alt="nodejs"></div>
+                        <div><img src="./img/mongodb.png" alt="MongoDB"></div>
+                    </div>
+                    <div class="project-deployed-div">
+                        <a class="project-github-link" target="_blank"
+                            href="https://github.com/sitansu04/KindMeal.my"><button class="project-github-btn"><i
+                                    class="fa-brands fa-github"></i> Github</button></a>
+                        <a class="project-deployed-link" target="_blank"
+                            href="https://melodic-frangipane-34b225.netlify.app/"><button class="project-deployed-btn">
+                                <img src="./img/netlify-icon-removebg-preview.png" alt=""> Deployed </button></a>
+                    </div>
+                </div>
+
             </div>
+
+
+        </div>
+        <div class="project-div">
 
             <div class="project-card">
-                <img class="project_image" src="./images/calculator.jpg" alt="" />
-
-                <h3 class="project-title">Calculator</h3>
-                <p class="project-description">
-                    It is basic calculator with all features.
-                </p>
-                <p class="project-description">HTML5 || CSS3 || JavaScript</p>
-                <div>
-                    <a target="_blank" href="https://github.com/sitansu04/Calculator"
-                        class="project-github-link"><button class="btn">GitHub </button></a>
-                    <a target="_blank" class="project-deployed-link" href="https://soft-smakager-a9bfc9.netlify.app/"><button class="btn">
-                           Preview </button></a>
+                <div class="project-card-image-div">
+                    <img src="./img/kindmeal_my.jpg" alt="ad">
                 </div>
+
+                <div class="project-card-dtails-div">
+
+                    <h1 class="project-title">Kindmeal.my</h1>
+
+                    <p class="project-description">An E-commerce website was built with all features, like for buying
+                        foods, Login-Sign Up, pagination.</p>
+
+                    <h2>Tech Stack :</h2>
+                    <div class="project-tech-stack">
+                        <div><img src="./img/html.png" alt="html"></div>
+                        <div><img src="./img/css.png" alt="css"></div>
+                        <div><img src="./img/javascript.png" alt="js"></div>
+                        <div><img src="./img/nodejs.png" alt="nodejs"></div>
+                        <div><img src="./img/mongodb.png" alt="MongoDB"></div>
+                    </div>
+                    <div class="project-deployed-div">
+                        <a class="project-github-link" target="_blank"
+                            href="https://github.com/sitansu04/KindMeal.my"><button class="project-github-btn"><i
+                                    class="fa-brands fa-github"></i> Github</button></a>
+                        <a class="project-deployed-link" target="_blank"
+                            href="https://melodic-frangipane-34b225.netlify.app/"><button class="project-deployed-btn">
+                                <img src="./img/netlify-icon-removebg-preview.png" alt=""> Deployed </button></a>
+                    </div>
+                </div>
+
             </div>
 
+
+        </div>
+        <div class="project-div">
+
+            <div class="project-card">
+                <div class="project-card-image-div">
+                    <img src="./img/calculator.jpg" alt="ad">
+                </div>
+
+                <div class="project-card-dtails-div">
+
+                    <h1 class="project-title">Calculator</h1>
+
+                    <p class="project-description">A basic calculator has all fuctionalities like add, substract
+                        multiplication & division.</p>
+
+                    <h2>Tech Stack :</h2>
+                    <div class="project-tech-stack">
+                        <div><img src="./img/html.png" alt="html"></div>
+                        <div><img src="./img/css.png" alt="css"></div>
+                        <div><img src="./img/javascript.png" alt="js"></div>
+                        <div><img src="./img/nodejs.png" alt="nodejs"></div>
+                        <div><img src="./img/mongodb.png" alt="MongoDB"></div>
+                    </div>
+                    <div class="project-deployed-div">
+                        <a class="project-github-link" target="_blank"
+                            href="https://github.com/sitansu04/Calculator"><button class="project-github-btn"><i
+                                    class="fa-brands fa-github"></i> Github</button></a>
+                        <a class="project-deployed-link" target="_blank"
+                            href="https://soft-smakager-a9bfc9.netlify.app/"><button class="project-deployed-btn"> <img
+                                    src="./img/netlify-icon-removebg-preview.png" alt=""> Deployed </button></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ========================================== statistics =======================================================  -->
+
+
+    <section id="stats">
+        <h1 class="sub-title" id="statistics">My Statistics</h1>
+        <div id="statisticsdiv">
+            <div class="github-streak-stats-div">
+                <div><img id="github-streak-stats"
+                        src="https://github-readme-streak-stats.herokuapp.com?user=sitansu04&theme=dark"
+                        alt="github-readme-streak-stats"></div>
+                <div><img id="github-stats-card"
+                        src="https://github-readme-stats.vercel.app/api?username=sitansu04&show_icons=true&theme=dark"
+                        alt=""></div>
+            </div>
+            <div class="github-lang-div"><img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitansu04&layout=compact&theme=dark"
+                    alt=""></div>
+        </div>
+
+        <h1 class="sub-title" id="calender">Github Calender</h1>
+        <!-- <h1 class="sub-title-mobile" id="calender">Github Calender</h1> -->
+        <div id="calenderdiv" class="react-activity-calendar">
+            <div class="calendar" style="margin-top: 30px; color: white;">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
         </div>
     </section>
 
-    <!-- scroll top button  -->
 
-    <a href="#home2" class="top">
-        <!-- <img src="./images/scroll-top-img.png" alt="" /> -->
-        <i class="fa-3x fa-solid fa-jet-fighter-up top"></i>
-    </a>
 
-    <!-- jquery cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 
-    </script>
-    <script src="./script/index.js"></script>
+
+    <!-- ------------------------- contact section -------------------------------  -->
+    <section id="contact">
+        <h1 class="contact-heading">Contact Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <!-- <h2>Contact me</h2> -->
+                    <div class="contact-email-div"><i class="fa-sharp fa-solid fa-paper-plane"></i><a id="contact-email"
+                            href="sitansugcelt@gmail.com"> sitansugcelt@gmail.com</a></div>
+                    <div><a id="contact-phone" href="+91-8016006068"><i class="fa-solid fa-phone"></i> +91 9006060666</a>
+                    </div>
+                    <div><a id="contact-linkedin" href="https://www.linkedin.com/in/sitansu-mandal-1503a01a5/"><i
+                                class="fa-brands fa-linkedin"></i> Sitansu Mandal</a></div>
+                    <div><a id="contact-github" href="https://github.com/sitansu04"><i
+                                class="fa-brands fa-github"></i> sitansu04</a></div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
 
 </body>
+<script src="./text.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script src="./index.js"></script>
 
 </html>
-<!-- //<i class="fa-solid fa-up-right"></i>// -->
