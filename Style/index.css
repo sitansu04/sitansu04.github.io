@@ -574,12 +574,12 @@ nav .fas {
   .about-img {
     margin: auto;
     margin-top: 20px;
-    width: 60%;
-    height: 20rem;
+    width: 100%;
+    /* height: 20rem; */
   }
   .about-img img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
   .user-detail-intro {
     width: 100%;
