@@ -50,3 +50,7 @@ document.getElementById("resume-button-2").onclick = () => {
 //   backSpeed: 60,
 //   loop: true,
 // });
+
+document.getElementById("resume-link-2").addEventListener("click",()=>{
+  window.location.assign("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link","_black")
+})
