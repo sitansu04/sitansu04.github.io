@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+:root{
+  scrollbar-color: #15ff00 black;
+}
 * {
   margin: 0;
   padding: 0;
@@ -114,10 +117,11 @@ nav ul li a:hover::after {
   margin: auto;
   margin-top: 130px;
   font-size: 30px;
-  background: url(../img//Portfolio-back.gif);
+  /* background: url(../img//Portfolio-back.gif); */
+  
   background-size: 100% 100%;
   padding: 3% 5%;
-  background-color: #ababab;
+  /* background-color: #242424; */
   /* border: 1px solid #ababab; */
   border-radius: 10px;
   display: flex;
@@ -663,4 +667,5 @@ nav .fas {
     text-align: justify;
   }
 }
+
 
