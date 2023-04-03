@@ -96,6 +96,13 @@ nav ul li a {
 #resume-button-1 {
   color: #fff;
 }
+#resume-link-2 {
+  color: black;
+  /* color: #2f3556; */
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
 nav ul li a::after {
   content: "";
   width: 0;
