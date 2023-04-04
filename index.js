@@ -31,11 +31,11 @@ GitHubCalendar(".calendar", "sitansu04", {
   tooltips: true,
 });
 
-document.getElementById("resume-button-1").onclick = () => {
-  window.open(
-    "https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link"
-  );
-};
+// document.getElementById("resume-button-1").onclick = () => {
+//   window.open(
+//     "https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link"
+//   );
+// };
 
 // document.getElementById("resume-button-2").onclick = () => {
 //   window.open(
@@ -52,5 +52,8 @@ document.getElementById("resume-button-1").onclick = () => {
 // });
 
 document.getElementById("resume-link-2").addEventListener("click",()=>{
+  window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link", "_blank")
+})
+document.getElementById("resume-link-1").addEventListener("click",()=>{
   window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link", "_blank")
 })
