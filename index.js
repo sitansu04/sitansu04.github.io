@@ -52,5 +52,5 @@ document.getElementById("resume-button-1").onclick = () => {
 // });
 
 document.getElementById("resume-link-2").addEventListener("click",()=>{
-  window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link","_black")
+  window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link", "_black")
 })
