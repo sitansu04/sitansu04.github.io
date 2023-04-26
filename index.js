@@ -52,8 +52,8 @@ GitHubCalendar(".calendar", "sitansu04", {
 // });
 
 document.getElementById("resume-link-2").addEventListener("click",()=>{
-  window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link", "_blank")
+  window.open("https://drive.google.com/file/d/12T2nmEOvOI208DsWKjRMqesKgsuekVNG/view?usp=share_link", "_blank")
 })
 document.getElementById("resume-link-1").addEventListener("click",()=>{
-  window.open("https://drive.google.com/file/d/1f3iTp0zU24L_MB9LjhszOwHuSaGrb9ca/view?usp=share_link", "_blank")
+  window.open("https://drive.google.com/file/d/12T2nmEOvOI208DsWKjRMqesKgsuekVNG/view?usp=share_link", "_blank")
 })
