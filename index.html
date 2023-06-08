@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./Style/cursor.scss">
     <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -65,11 +66,11 @@
     <section id="about" class="about section">
         <h1 class="sub-title-mobile">About Me</h1>
         <div class="row">
-            <div class="about-img">
+            <div class="about-img" data-aos="fade-up">
                 <img class="home-img" width="200" height="200" src="./img/130kb.jpg" alt="profile image">
 
             </div>
-            <div class="about-child-div">
+            <div class="about-child-div" data-aos="fade-up"> 
                 <h1 class="sub-title">About</h1>
                 <h2>I'm Sitansu Mandal , <span class="action">Full Stack Web Developer</span>
                 </h2>
@@ -96,7 +97,7 @@
         <h1 class="sub-title">Skills</h1>
 
         <!-- <hr> -->
-        <div id="grid">
+        <div id="grid" data-aos="fade-up">
             <div class="skills-card">
                 <img class="skills-card-img" src="./img/html.png" alt="html">
                 <p class="skills-card-name">HTML</p>
@@ -153,7 +154,7 @@
 
     <section id="projects">
         <h1 class="sub-title">Projects</h1>
-        <div class="project-div">
+        <div class="project-div" data-aos="fade-right">
 
             <div class="project-card">
                 <div class="project-card-image-div">
@@ -188,7 +189,7 @@
 
 
         </div>
-        <div class="project-div">
+        <div class="project-div" data-aos="fade-left">
 
             <div class="project-card">
                 <div class="project-card-image-div">
@@ -224,7 +225,7 @@
 
 
         </div>
-        <div class="project-div">
+        <div class="project-div" data-aos="fade-right">
 
             <div class="project-card">
                 <div class="project-card-image-div">
@@ -296,7 +297,7 @@
 
 
         </div> -->
-        <div class="project-div">
+        <div class="project-div" data-aos="fade-left">
 
             <div class="project-card">
                 <div class="project-card-image-div">
@@ -344,21 +345,21 @@
         <h1 class="sub-title" id="statistics">My Statistics</h1>
         <div id="statisticsdiv">
             <div class="github-streak-stats-div">
-                <div><img id="github-streak-stats"
+                <div data-aos="fade-left"><img id="github-streak-stats"
                         src="https://github-readme-streak-stats.herokuapp.com?user=sitansu04&theme=dark"
                         alt="github-readme-streak-stats"></div>
-                <div><img id="github-stats-card"
+                <div data-aos="fade-right"><img id="github-stats-card"
                         src="https://github-readme-stats.vercel.app/api?username=sitansu04&show_icons=true&theme=dark"
                         alt=""></div>
             </div>
-            <div class="github-lang-div"><img id="github-top-langs"
+            <div data-aos="fade-up" class="github-lang-div"><img id="github-top-langs"
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=sitansu04&layout=compact&theme=dark"
                     alt=""></div>
         </div>
 
         <h1 class="sub-title" id="calender">Github Calender</h1>
 
-        <div id="calenderdiv" class="react-activity-calendar">
+        <div data-aos="fade-up" id="calenderdiv" class="react-activity-calendar">
             <div class="calendar" style="margin-top: 30px; color: white;">
                 <!-- Loading stuff -->
                 Loading the data just for you.
@@ -376,7 +377,7 @@
         <h1 class="contact-heading">Contact Me</h1>
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right">
                     <!-- <h2>Contact me</h2> -->
                     <div class="contact-email-div"><i class="fa-sharp fa-solid fa-paper-plane"></i><a id="contact-email"
                             href="sitansugcelt@gmail.com"> sitansugcelt@gmail.com</a></div>
@@ -388,7 +389,7 @@
                     <div><a id="contact-github" href="https://github.com/sitansu04"><i class="fa-brands fa-github"></i>
                             sitansu04</a></div>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
@@ -406,6 +407,10 @@
 
 
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="./text.js"></script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script src="./index.js"></script>
